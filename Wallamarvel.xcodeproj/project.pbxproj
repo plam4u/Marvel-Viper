@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CB4BB85D1168AFEAB02C41F /* Pods_Wallamarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA1DFB8E31D80CD336FB391 /* Pods_Wallamarvel.framework */; };
+		810502A81ED0345C00DA6271 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502A71ED0345C00DA6271 /* AppDelegate.swift */; };
+		810502AA1ED0345C00DA6271 /* HeroListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502A91ED0345C00DA6271 /* HeroListViewController.swift */; };
+		810502AD1ED0345C00DA6271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810502AB1ED0345C00DA6271 /* Main.storyboard */; };
+		810502AF1ED0345C00DA6271 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 810502AE1ED0345C00DA6271 /* Assets.xcassets */; };
+		810502B21ED0345C00DA6271 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 810502B01ED0345C00DA6271 /* LaunchScreen.storyboard */; };
+		810502BF1ED0365000DA6271 /* Gateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502BD1ED0365000DA6271 /* Gateway.swift */; };
+		810502C21ED036B400DA6271 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502C11ED036B400DA6271 /* Result.swift */; };
+		810502C71ED0939700DA6271 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502C61ED0939700DA6271 /* Hero.swift */; };
+		810502CA1ED095CF00DA6271 /* HeroMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502C91ED095CF00DA6271 /* HeroMapper.swift */; };
+		810502CC1ED0998100DA6271 /* HeroEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502CB1ED0998100DA6271 /* HeroEndpoint.swift */; };
+		810502DD1ED1816200DA6271 /* HeroesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502DC1ED1816200DA6271 /* HeroesProtocols.swift */; };
+		810502DF1ED1854800DA6271 /* HeroListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502DE1ED1854800DA6271 /* HeroListWireframe.swift */; };
+		810502E11ED1856000DA6271 /* HeroListDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502E01ED1856000DA6271 /* HeroListDataManager.swift */; };
+		810502E31ED1857F00DA6271 /* HeroListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502E21ED1857F00DA6271 /* HeroListInteractor.swift */; };
+		810502E51ED185F600DA6271 /* HeroListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502E41ED185F600DA6271 /* HeroListPresenter.swift */; };
+		810502E81ED197F100DA6271 /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502E71ED197F100DA6271 /* HeroCell.swift */; };
+		810502EC1ED1F2FE00DA6271 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502EB1ED1F2FE00DA6271 /* HeroDetailViewController.swift */; };
+		810502EF1ED1F4B600DA6271 /* HeroDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502EE1ED1F4B600DA6271 /* HeroDetailPresenter.swift */; };
+		810502F31ED1F4F600DA6271 /* HeroDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502F21ED1F4F600DA6271 /* HeroDetailProtocols.swift */; };
+		810502F61ED1F66000DA6271 /* HeroDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810502F51ED1F66000DA6271 /* HeroDetailWireframe.swift */; };
+		810503181ED201F400DA6271 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810503171ED201F400DA6271 /* SplitViewController.swift */; };
+		81B765051ED223C30065E3DD /* apikeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81B765041ED223C30065E3DD /* apikeys.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22F6667CE9E9A3AB154252BE /* Pods-Wallamarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallamarvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallamarvel/Pods-Wallamarvel.debug.xcconfig"; sourceTree = "<group>"; };
+		541FD66B8AE1EEC0DD4FEBA4 /* Pods-Wallamarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallamarvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallamarvel/Pods-Wallamarvel.release.xcconfig"; sourceTree = "<group>"; };
+		810502A41ED0345C00DA6271 /* Wallamarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallamarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		810502A71ED0345C00DA6271 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		810502A91ED0345C00DA6271 /* HeroListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListViewController.swift; sourceTree = "<group>"; };
+		810502AC1ED0345C00DA6271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		810502AE1ED0345C00DA6271 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		810502B11ED0345C00DA6271 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		810502B31ED0345D00DA6271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		810502BD1ED0365000DA6271 /* Gateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gateway.swift; path = Model/Gateway/Gateway.swift; sourceTree = "<group>"; };
+		810502C11ED036B400DA6271 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Model/Gateway/Result.swift; sourceTree = "<group>"; };
+		810502C61ED0939700DA6271 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hero.swift; path = Model/Entities/Hero.swift; sourceTree = "<group>"; };
+		810502C91ED095CF00DA6271 /* HeroMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroMapper.swift; path = Model/Mapper/HeroMapper.swift; sourceTree = "<group>"; };
+		810502CB1ED0998100DA6271 /* HeroEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroEndpoint.swift; path = Model/Endpoint/HeroEndpoint.swift; sourceTree = "<group>"; };
+		810502DC1ED1816200DA6271 /* HeroesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroesProtocols.swift; path = "Modules/Heroes List/HeroesProtocols.swift"; sourceTree = "<group>"; };
+		810502DE1ED1854800DA6271 /* HeroListWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroListWireframe.swift; path = "Modules/Heroes List/HeroListWireframe.swift"; sourceTree = "<group>"; };
+		810502E01ED1856000DA6271 /* HeroListDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroListDataManager.swift; path = "Modules/Heroes List/HeroListDataManager.swift"; sourceTree = "<group>"; };
+		810502E21ED1857F00DA6271 /* HeroListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroListInteractor.swift; path = "Modules/Heroes List/HeroListInteractor.swift"; sourceTree = "<group>"; };
+		810502E41ED185F600DA6271 /* HeroListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroListPresenter.swift; path = "Modules/Heroes List/HeroListPresenter.swift"; sourceTree = "<group>"; };
+		810502E71ED197F100DA6271 /* HeroCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroCell.swift; path = "Modules/Heroes List/HeroCell.swift"; sourceTree = "<group>"; };
+		810502EB1ED1F2FE00DA6271 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailViewController.swift; path = "Modules/Hero Detail/HeroDetailViewController.swift"; sourceTree = "<group>"; };
+		810502EE1ED1F4B600DA6271 /* HeroDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailPresenter.swift; path = "Modules/Hero Detail/HeroDetailPresenter.swift"; sourceTree = "<group>"; };
+		810502F21ED1F4F600DA6271 /* HeroDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailProtocols.swift; path = "Modules/Hero Detail/HeroDetailProtocols.swift"; sourceTree = "<group>"; };
+		810502F51ED1F66000DA6271 /* HeroDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroDetailWireframe.swift; path = "Modules/Hero Detail/HeroDetailWireframe.swift"; sourceTree = "<group>"; };
+		810503171ED201F400DA6271 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SplitViewController.swift; path = Modules/SplitViewController.swift; sourceTree = "<group>"; };
+		81B765041ED223C30065E3DD /* apikeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apikeys.plist; sourceTree = "<group>"; };
+		DBA1DFB8E31D80CD336FB391 /* Pods_Wallamarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallamarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		810502A11ED0345C00DA6271 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB4BB85D1168AFEAB02C41F /* Pods_Wallamarvel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8105029B1ED0345C00DA6271 = {
+			isa = PBXGroup;
+			children = (
+				810502A61ED0345C00DA6271 /* Wallamarvel */,
+				810502A51ED0345C00DA6271 /* Products */,
+				9111F3489D6A17A153268B99 /* Pods */,
+				A69167C7F6FC5FF72D4B4E24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		810502A51ED0345C00DA6271 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				810502A41ED0345C00DA6271 /* Wallamarvel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		810502A61ED0345C00DA6271 /* Wallamarvel */ = {
+			isa = PBXGroup;
+			children = (
+				810502A71ED0345C00DA6271 /* AppDelegate.swift */,
+				810502AB1ED0345C00DA6271 /* Main.storyboard */,
+				810502D51ED17F7900DA6271 /* Modules */,
+				810502BA1ED0354000DA6271 /* Model */,
+				810502AE1ED0345C00DA6271 /* Assets.xcassets */,
+				810502B01ED0345C00DA6271 /* LaunchScreen.storyboard */,
+				81B765041ED223C30065E3DD /* apikeys.plist */,
+				810502B31ED0345D00DA6271 /* Info.plist */,
+			);
+			path = Wallamarvel;
+			sourceTree = "<group>";
+		};
+		810502BA1ED0354000DA6271 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				810502C51ED0936E00DA6271 /* Entities */,
+				810502C41ED08B8B00DA6271 /* EndPoints */,
+				810502C81ED0946300DA6271 /* Mappers */,
+				810502C31ED08B0E00DA6271 /* Gateway */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		810502C31ED08B0E00DA6271 /* Gateway */ = {
+			isa = PBXGroup;
+			children = (
+				810502BD1ED0365000DA6271 /* Gateway.swift */,
+				810502C11ED036B400DA6271 /* Result.swift */,
+			);
+			name = Gateway;
+			sourceTree = "<group>";
+		};
+		810502C41ED08B8B00DA6271 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				810502CB1ED0998100DA6271 /* HeroEndpoint.swift */,
+			);
+			name = EndPoints;
+			sourceTree = "<group>";
+		};
+		810502C51ED0936E00DA6271 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				810502C61ED0939700DA6271 /* Hero.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		810502C81ED0946300DA6271 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				810502C91ED095CF00DA6271 /* HeroMapper.swift */,
+			);
+			name = Mappers;
+			sourceTree = "<group>";
+		};
+		810502D51ED17F7900DA6271 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				810502D61ED17F8400DA6271 /* Hero List */,
+				810502E91ED1F1F000DA6271 /* Hero Detail */,
+				810503171ED201F400DA6271 /* SplitViewController.swift */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		810502D61ED17F8400DA6271 /* Hero List */ = {
+			isa = PBXGroup;
+			children = (
+				810502D81ED180C000DA6271 /* View */,
+				810502E61ED1860F00DA6271 /* Presenter */,
+				810502D91ED180ED00DA6271 /* Interactor */,
+				810502DA1ED180F900DA6271 /* Data Manager */,
+				810502DB1ED1811200DA6271 /* Wireframe */,
+				810502D71ED180B800DA6271 /* Protocols */,
+			);
+			name = "Hero List";
+			sourceTree = "<group>";
+		};
+		810502D71ED180B800DA6271 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				810502DC1ED1816200DA6271 /* HeroesProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		810502D81ED180C000DA6271 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				810502A91ED0345C00DA6271 /* HeroListViewController.swift */,
+				810502E71ED197F100DA6271 /* HeroCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		810502D91ED180ED00DA6271 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				810502E21ED1857F00DA6271 /* HeroListInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		810502DA1ED180F900DA6271 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				810502E01ED1856000DA6271 /* HeroListDataManager.swift */,
+			);
+			name = "Data Manager";
+			sourceTree = "<group>";
+		};
+		810502DB1ED1811200DA6271 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				810502DE1ED1854800DA6271 /* HeroListWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		810502E61ED1860F00DA6271 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				810502E41ED185F600DA6271 /* HeroListPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		810502E91ED1F1F000DA6271 /* Hero Detail */ = {
+			isa = PBXGroup;
+			children = (
+				810502EA1ED1F2DF00DA6271 /* View */,
+				810502ED1ED1F48D00DA6271 /* Presenter */,
+				810502F41ED1F64000DA6271 /* Wireframe */,
+				810502F01ED1F4CE00DA6271 /* Protocols */,
+			);
+			name = "Hero Detail";
+			sourceTree = "<group>";
+		};
+		810502EA1ED1F2DF00DA6271 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				810502EB1ED1F2FE00DA6271 /* HeroDetailViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		810502ED1ED1F48D00DA6271 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				810502EE1ED1F4B600DA6271 /* HeroDetailPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		810502F01ED1F4CE00DA6271 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				810502F21ED1F4F600DA6271 /* HeroDetailProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		810502F41ED1F64000DA6271 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				810502F51ED1F66000DA6271 /* HeroDetailWireframe.swift */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		9111F3489D6A17A153268B99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22F6667CE9E9A3AB154252BE /* Pods-Wallamarvel.debug.xcconfig */,
+				541FD66B8AE1EEC0DD4FEBA4 /* Pods-Wallamarvel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A69167C7F6FC5FF72D4B4E24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1DFB8E31D80CD336FB391 /* Pods_Wallamarvel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		810502A31ED0345C00DA6271 /* Wallamarvel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 810502B61ED0345D00DA6271 /* Build configuration list for PBXNativeTarget "Wallamarvel" */;
+			buildPhases = (
+				B929D4DCB93845AD14088EF0 /* [CP] Check Pods Manifest.lock */,
+				810502A01ED0345C00DA6271 /* Sources */,
+				810502A11ED0345C00DA6271 /* Frameworks */,
+				810502A21ED0345C00DA6271 /* Resources */,
+				EA660A92707DC1B907A7AF54 /* [CP] Embed Pods Frameworks */,
+				2869AD6981550427EEC4942F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wallamarvel;
+			productName = Wallamarvel;
+			productReference = 810502A41ED0345C00DA6271 /* Wallamarvel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8105029C1ED0345C00DA6271 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Juanjo García Villaescusa";
+				TargetAttributes = {
+					810502A31ED0345C00DA6271 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZV4G4K6D9Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8105029F1ED0345C00DA6271 /* Build configuration list for PBXProject "Wallamarvel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8105029B1ED0345C00DA6271;
+			productRefGroup = 810502A51ED0345C00DA6271 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				810502A31ED0345C00DA6271 /* Wallamarvel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		810502A21ED0345C00DA6271 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810502B21ED0345C00DA6271 /* LaunchScreen.storyboard in Resources */,
+				81B765051ED223C30065E3DD /* apikeys.plist in Resources */,
+				810502AF1ED0345C00DA6271 /* Assets.xcassets in Resources */,
+				810502AD1ED0345C00DA6271 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2869AD6981550427EEC4942F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallamarvel/Pods-Wallamarvel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B929D4DCB93845AD14088EF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA660A92707DC1B907A7AF54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wallamarvel/Pods-Wallamarvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		810502A01ED0345C00DA6271 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810502AA1ED0345C00DA6271 /* HeroListViewController.swift in Sources */,
+				810502E81ED197F100DA6271 /* HeroCell.swift in Sources */,
+				810502C21ED036B400DA6271 /* Result.swift in Sources */,
+				810502BF1ED0365000DA6271 /* Gateway.swift in Sources */,
+				810502E31ED1857F00DA6271 /* HeroListInteractor.swift in Sources */,
+				810503181ED201F400DA6271 /* SplitViewController.swift in Sources */,
+				810502E51ED185F600DA6271 /* HeroListPresenter.swift in Sources */,
+				810502DD1ED1816200DA6271 /* HeroesProtocols.swift in Sources */,
+				810502A81ED0345C00DA6271 /* AppDelegate.swift in Sources */,
+				810502CC1ED0998100DA6271 /* HeroEndpoint.swift in Sources */,
+				810502EC1ED1F2FE00DA6271 /* HeroDetailViewController.swift in Sources */,
+				810502F31ED1F4F600DA6271 /* HeroDetailProtocols.swift in Sources */,
+				810502CA1ED095CF00DA6271 /* HeroMapper.swift in Sources */,
+				810502E11ED1856000DA6271 /* HeroListDataManager.swift in Sources */,
+				810502EF1ED1F4B600DA6271 /* HeroDetailPresenter.swift in Sources */,
+				810502F61ED1F66000DA6271 /* HeroDetailWireframe.swift in Sources */,
+				810502DF1ED1854800DA6271 /* HeroListWireframe.swift in Sources */,
+				810502C71ED0939700DA6271 /* Hero.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		810502AB1ED0345C00DA6271 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				810502AC1ED0345C00DA6271 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		810502B01ED0345C00DA6271 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				810502B11ED0345C00DA6271 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		810502B41ED0345D00DA6271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		810502B51ED0345D00DA6271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		810502B71ED0345D00DA6271 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F6667CE9E9A3AB154252BE /* Pods-Wallamarvel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZV4G4K6D9Y;
+				INFOPLIST_FILE = Wallamarvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanvillaescusa.Wallamarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		810502B81ED0345D00DA6271 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541FD66B8AE1EEC0DD4FEBA4 /* Pods-Wallamarvel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZV4G4K6D9Y;
+				INFOPLIST_FILE = Wallamarvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juanvillaescusa.Wallamarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8105029F1ED0345C00DA6271 /* Build configuration list for PBXProject "Wallamarvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				810502B41ED0345D00DA6271 /* Debug */,
+				810502B51ED0345D00DA6271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		810502B61ED0345D00DA6271 /* Build configuration list for PBXNativeTarget "Wallamarvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				810502B71ED0345D00DA6271 /* Debug */,
+				810502B81ED0345D00DA6271 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8105029C1ED0345C00DA6271 /* Project object */;
+}
